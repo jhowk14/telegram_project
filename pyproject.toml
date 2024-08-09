@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "telegram-project"
+version = "0.1.0"
+description = ""
+authors = ["jhowk14 <jonathanperozi16@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+telethon = "^1.36.0"
+pandas = "^2.2.2"
+openpyxl = "^3.1.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,89 @@
+[
+    {
+        "label": "TelegramClient",
+        "importPath": "telethon",
+        "description": "telethon",
+        "isExtraImport": true,
+        "detail": "telethon",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "extract_message_data",
+        "kind": 2,
+        "importPath": "telegram_project.main",
+        "description": "telegram_project.main",
+        "peekOfCode": "def extract_message_data(message_text):\n    if not message_text:\n        return None\n    lines = message_text.split(\"\\n\")\n    data = {}\n    for line in lines:\n        if line.startswith(\"📈\"):\n            parts = line.split(\"@\")\n            data[\"Aposta\"] = parts[0].split(\"📈\")[1].strip()\n            data[\"Odds\"] = parts[1].split(\":\")[0].strip()",
+        "detail": "telegram_project.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_date_range_option",
+        "kind": 2,
+        "importPath": "telegram_project.main",
+        "description": "telegram_project.main",
+        "peekOfCode": "def get_date_range_option():\n    print(\"Escolha o intervalo de datas:\")\n    print(\"1. Últimas 24 horas\")\n    print(\"2. Última semana\")\n    print(\"3. Último mês\")\n    print(\"4. Desde o início\")\n    choice = input(\"Digite o número da opção desejada: \")\n    if choice == \"1\":\n        return datetime.now() - timedelta(days=1)\n    elif choice == \"2\":",
+        "detail": "telegram_project.main",
+        "documentation": {}
+    },
+    {
+        "label": "api_id",
+        "kind": 5,
+        "importPath": "telegram_project.main",
+        "description": "telegram_project.main",
+        "peekOfCode": "api_id = \"29149496\"\napi_hash = \"7922ba58e7072444a0ab2e4636bf39ff\"\ngroup_name = \"caveiratipsfree\"\n# Inicia o cliente do Telegram\nclient = TelegramClient(\"tete\", api_id, api_hash)\n# Função para extrair dados das mensagens\ndef extract_message_data(message_text):\n    if not message_text:\n        return None\n    lines = message_text.split(\"\\n\")",
+        "detail": "telegram_project.main",
+        "documentation": {}
+    },
+    {
+        "label": "api_hash",
+        "kind": 5,
+        "importPath": "telegram_project.main",
+        "description": "telegram_project.main",
+        "peekOfCode": "api_hash = \"7922ba58e7072444a0ab2e4636bf39ff\"\ngroup_name = \"caveiratipsfree\"\n# Inicia o cliente do Telegram\nclient = TelegramClient(\"tete\", api_id, api_hash)\n# Função para extrair dados das mensagens\ndef extract_message_data(message_text):\n    if not message_text:\n        return None\n    lines = message_text.split(\"\\n\")\n    data = {}",
+        "detail": "telegram_project.main",
+        "documentation": {}
+    },
+    {
+        "label": "group_name",
+        "kind": 5,
+        "importPath": "telegram_project.main",
+        "description": "telegram_project.main",
+        "peekOfCode": "group_name = \"caveiratipsfree\"\n# Inicia o cliente do Telegram\nclient = TelegramClient(\"tete\", api_id, api_hash)\n# Função para extrair dados das mensagens\ndef extract_message_data(message_text):\n    if not message_text:\n        return None\n    lines = message_text.split(\"\\n\")\n    data = {}\n    for line in lines:",
+        "detail": "telegram_project.main",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "telegram_project.main",
+        "description": "telegram_project.main",
+        "peekOfCode": "client = TelegramClient(\"tete\", api_id, api_hash)\n# Função para extrair dados das mensagens\ndef extract_message_data(message_text):\n    if not message_text:\n        return None\n    lines = message_text.split(\"\\n\")\n    data = {}\n    for line in lines:\n        if line.startswith(\"📈\"):\n            parts = line.split(\"@\")",
+        "detail": "telegram_project.main",
+        "documentation": {}
+    }
+]
